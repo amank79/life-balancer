@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        * {
+            font-family: 'Open Sans', 'Courier New', Courier, monospace;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #495E57;
+            z-index: 1000;
+        }
+
+        /* Add this style for dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            background-color: #495E57
+        }
+
+        .dropdown-content a:hover {
+            background-color: #495E57;
+            color: #F4CE14;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="w-full h-[65px] flex justify-between items-center bg-[#495E57] py-4 px-8 text-white">
+        <div class="h-full flex justify-between items-center gap-x-4">
+            <img class="h-full rounded-full" src="./assets/logo.png" alt="Org Logo" />
+            <div class="h-full flex justify-center items-center gap-x-4">
+                <a href="./index.html" class="cursor-pointer hover:text-[#F4CE14]">Home</a>
+                <div class="dropdown">
+                    <a href="#" class="cursor-pointer hover:text-[#F4CE14]">Browse</a>
+                    <div class="dropdown-content">
+                        <a href="./oil.html">Oils</a>
+                        <a href="./salt.html">Salts</a>
+                        <a href="./kit.html">Kits</a>
+                    </div>
+                </div>
+                <a href="./about.html" class="cursor-pointer hover:text-[#F4CE14]">About Us</a>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-x-4">
+            <a
+                class="cursor-pointer py-1 px-4 border border-[#F4CE14] text-[#F4CE14] hover:bg-[#F4CE14] hover:text-[#495E57]">Login</a>
+            <a
+                class="cursor-pointer py-1 px-4 border border-[#F4CE14] text-[#F4CE14] hover:bg-[#F4CE14] hover:text-[#495E57]">Buy
+                Now</a>
+        </div>
+    </nav>
+    <section>
+        <header class="text-center">
+            <h1 class="text-4xl text-[#45474B] font-bold mt-8">OILS</h1>
+        </header>
+    </section>
+    <main>
+        <section id="category" class="w-full">
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/balancr bath oil.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Balancer Bath Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/cleanser bath oil.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Cleanser Bath Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/crown oil blend.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Crown Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/enhancer bath oil.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Enhancer Bath Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/heart oil.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Heart Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/root .png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Root Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/sacral.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Sacral Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/solar plexius.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Solar Plexus Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+            <div class="w-full h-[60vh] flex justify-between items-center p-4 mt-8" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center">
+                    <img src="./assets/oil/third eye.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-right">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Third Eye Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis ratione possimus
+                        dolores placeat, quasi, ab id quisquam mollitia illo in aliquid.
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full h-[60vh] flex justify-between items-center mt-8 p-4" data-aos="fade-up">
+                <div class="w-1/2 h-full p-10 flex justify-center items-center" data-aos="fade-right">
+                    <img src="./assets/oil/throat.png"
+                        class="h-full shadow-md border border-[#F4CE14] border-opacity-50" />
+                </div>
+                <div class="w-1/2 h-full p-10 flex flex-col justify-between items-start gap-y-2" data-aos="fade-up">
+                    <h1 class="text-2xl font-bold text-[#45474B]">Throat Chakra Oil</h1>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nihil, facilis ipsam officia
+                        a dignissimos numquam. Qui repellat dolor deserunt!
+                    </p>
+                    <p class="text-[#F4CE14] font-bold">Price: ₹899.99</p>
+                    <button
+                        class="py-1 px-4 border border-[#45474B] text-[#45474B] hover:bg-[#495E57] hover:text-[#F5F7F8]">
+                        Buy
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full h-[100px] bg-[#45474B] flex justify-start items-center gap-x-8 px-8 text-white">
+        <p class="">© 2023 Seed (Seed Health, Inc.)</p>
+        <div class="flex justify-center items-center gap-x-4">
+            <a>Terms of Use</a>
+            <a>Privacy + Cookies</a>
+            <a>Accessibility</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+
+        // Add this JavaScript code for dropdown
+        let dropdownVisible = false;
+
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownVisible = !dropdownVisible;
+
+            if (dropdownVisible) {
+                dropdownMenu.classList.remove('hidden');
+            } else {
+                dropdownMenu.classList.add('hidden');
+            }
+        }
+
+        // Close the dropdown when clicking outside
+        window.addEventListener('click', function (event) {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (!event.target.matches('.cursor-pointer') && dropdownVisible) {
+                dropdownMenu.classList.add('hidden');
+                dropdownVisible = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
