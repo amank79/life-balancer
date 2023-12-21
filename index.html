@@ -63,6 +63,54 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .dropdown-content {
+                position: static;
+                display: none;
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: none;
+            }
+
+            .hamburger-menu {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 65px;
+                left: 0;
+                background-color: #495E57;
+                z-index: 100;
+            }
+
+            .nav-links a {
+                padding: 15px;
+                text-align: center;
+                display: block;
+                color: white;
+            }
+
+            .nav-links a:hover {
+                background-color: #F4CE14;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+        }
     </style>
 </head>
 
@@ -71,7 +119,7 @@
         <div class="h-full flex justify-between items-center gap-x-4">
             <img class="h-full rounded-full" src="./assets/logo.png" alt="Org Logo" />
             <div class="h-full flex justify-center items-center gap-x-4">
-                <a href="#home" class="cursor-pointer hover:text-[#F4CE14]">Aman</a>
+                <a href="#home" class="cursor-pointer hover:text-[#F4CE14]">Home</a>
                 <div class="dropdown">
                     <a href="#" class="cursor-pointer hover:text-[#F4CE14]">Browse</a>
                     <div class="dropdown-content">
@@ -91,6 +139,9 @@
                 Now</a>
         </div>
     </nav>
+
+
+
     <main>
 
         <section class="h-[calc(100dvh_-_65px)] relative"
